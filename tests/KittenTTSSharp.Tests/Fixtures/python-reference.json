@@ -1,0 +1,1307 @@
+{
+  "sourceRevision": "be5758500b731b8fc674acc62ea480d3022b7ebe",
+  "normalization": [
+    {
+      "input": "Smith et al. 2024, pp. 31-35",
+      "expected": "Smith et al twenty twenty-four pages thirty-one to thirty-five"
+    },
+    {
+      "input": "Fig. 2",
+      "expected": "Figure two"
+    },
+    {
+      "input": "Dr. Rivera paid $12.50 at 3:05 p.m.",
+      "expected": "Doctor Rivera paid twelve dollars and fifty cents at three oh five p m."
+    },
+    {
+      "input": "Jan. 2026",
+      "expected": "January twenty twenty-six"
+    },
+    {
+      "input": "version 2.4",
+      "expected": "version two point four"
+    },
+    {
+      "input": "May 5, 2026",
+      "expected": "May fifth, twenty twenty-six"
+    },
+    {
+      "input": "10:30 AM",
+      "expected": "ten thirty a m"
+    },
+    {
+      "input": "$1,250.00",
+      "expected": "one thousand two hundred fifty dollars"
+    },
+    {
+      "input": "9%",
+      "expected": "nine percent"
+    },
+    {
+      "input": "v1.2.3",
+      "expected": "v one point two point three"
+    },
+    {
+      "input": "Visit https://example.com or email hello@example.com.",
+      "expected": "Visit e x a m p l e dot c o m or email h e l l o at e x a m p l e dot c o m."
+    },
+    {
+      "input": "",
+      "expected": ""
+    },
+    {
+      "input": "   ",
+      "expected": ""
+    },
+    {
+      "input": "A first sentence. A second sentence!",
+      "expected": "A first sentence. A second sentence!"
+    },
+    {
+      "input": "Hello, world!",
+      "expected": "Hello, world!"
+    },
+    {
+      "input": "There are 1200 students and 42 teachers.",
+      "expected": "There are twelve hundred students and forty-two teachers."
+    },
+    {
+      "input": "The project costs $1,000,000 and took 365 days.",
+      "expected": "The project costs one million dollars and took three hundred sixty-five days."
+    },
+    {
+      "input": "Temperature dropped to -5 degrees overnight.",
+      "expected": "Temperature dropped to negative five degrees overnight."
+    },
+    {
+      "input": "Pi is approximately 3.14159.",
+      "expected": "Pi is approximately three point one four one five nine."
+    },
+    {
+      "input": "The voltage is 1.50 volts.",
+      "expected": "The voltage is one point five zero volts."
+    },
+    {
+      "input": "Add .5 teaspoons of salt and .25 cup of milk.",
+      "expected": "Add .five teaspoons of salt and .twenty-five cup of milk."
+    },
+    {
+      "input": "A -.05 correction was applied.",
+      "expected": "A -.five correction was applied."
+    },
+    {
+      "input": "There were 0 errors and 0.0 warnings.",
+      "expected": "There were zero errors and zero point zero warnings."
+    },
+    {
+      "input": "The population is 7,900,000,000.",
+      "expected": "The population is seven billion nine hundred million."
+    },
+    {
+      "input": "Learning rate is 1e-4, weight decay 1e-5.",
+      "expected": "Learning rate is onee-four weight decay onee-five."
+    },
+    {
+      "input": "Avogadro's number is 6.022E23.",
+      "expected": "Avogadro s number is six point zero two twoE2three."
+    },
+    {
+      "input": "The signal is 2.5e10 Hz.",
+      "expected": "The signal is two point fivee1zero Hz."
+    },
+    {
+      "input": "We trained a 7B parameter model and a 13B variant.",
+      "expected": "We trained a sevenB parameter model and a thirteenB variant."
+    },
+    {
+      "input": "The 340M model beat the 7B on MMLU.",
+      "expected": "The three hundred fortyM model beat the sevenB on MMLU."
+    },
+    {
+      "input": "The salary was $85K per year.",
+      "expected": "The salary was eighty-five thousand dollars per year."
+    },
+    {
+      "input": "A coffee costs $4.99 here.",
+      "expected": "A coffee costs four dollars and ninety-nine cents here."
+    },
+    {
+      "input": "Rent is €1,200 per month.",
+      "expected": "Rent is twelve hundred euros per month."
+    },
+    {
+      "input": "The book is £9.99.",
+      "expected": "The book is nine pounds and ninety-nine cents."
+    },
+    {
+      "input": "Inflation rose by 3.5% last quarter.",
+      "expected": "Inflation rose by three point five percent last quarter."
+    },
+    {
+      "input": "Stocks fell -2% today.",
+      "expected": "Stocks fell negative two percent today."
+    },
+    {
+      "input": "She finished 1st, he came 2nd, I was 3rd.",
+      "expected": "She finished first, he came second, I was third."
+    },
+    {
+      "input": "It's the 21st century and the 100th anniversary.",
+      "expected": "It s the twenty-first century and the one hundredth anniversary."
+    },
+    {
+      "input": "He ran his 42nd marathon.",
+      "expected": "He ran his forty-second marathon."
+    },
+    {
+      "input": "On the 33rd floor.",
+      "expected": "On the thirty-third floor."
+    },
+    {
+      "input": "Cut the recipe in 1/2.",
+      "expected": "Cut the recipe in one two."
+    },
+    {
+      "input": "Add 3/4 cup of sugar and 1/4 teaspoon of salt.",
+      "expected": "Add three four cup of sugar and one four teaspoon of salt."
+    },
+    {
+      "input": "The team completed 2/3 of the project.",
+      "expected": "The team completed two three of the project."
+    },
+    {
+      "input": "The pipe is 5/8 inch in diameter.",
+      "expected": "The pipe is five eight inch in diameter."
+    },
+    {
+      "input": "The meeting starts at 3:30pm.",
+      "expected": "The meeting starts at three thirty p m."
+    },
+    {
+      "input": "Departure at 14:00.",
+      "expected": "Departure at fourteen."
+    },
+    {
+      "input": "Alarm set for 9:05 AM.",
+      "expected": "Alarm set for nine oh five a m."
+    },
+    {
+      "input": "The server restarts at 0:00.",
+      "expected": "The server restarts at zero."
+    },
+    {
+      "input": "The 80s music scene was iconic.",
+      "expected": "The eightys music scene was iconic."
+    },
+    {
+      "input": "She grew up listening to 1990s grunge.",
+      "expected": "She grew up listening to nineteen ninetys grunge."
+    },
+    {
+      "input": "The 2000s brought social media.",
+      "expected": "The two thousands brought social media."
+    },
+    {
+      "input": "AI took off in the 2020s.",
+      "expected": "AI took off in the twenty twentys."
+    },
+    {
+      "input": "Born in the '90s, raised on 2000s pop.",
+      "expected": "Born in the ninetys, raised on two thousands pop."
+    },
+    {
+      "input": "Read pages 10-20 for homework.",
+      "expected": "Read pages ten to twenty for homework."
+    },
+    {
+      "input": "The war lasted from 2020-2024.",
+      "expected": "The war lasted from twenty twenty to twenty twenty-four."
+    },
+    {
+      "input": "Store between 5-10 degrees.",
+      "expected": "Store between five to ten degrees."
+    },
+    {
+      "input": "gpt-3 is pretty sick.",
+      "expected": "gpt three is pretty sick."
+    },
+    {
+      "input": "They upgraded to GPT-3.5 last month.",
+      "expected": "They upgraded to GPT three point five last month."
+    },
+    {
+      "input": "Requires Python-3.10 or higher.",
+      "expected": "Requires Python three point ten or higher."
+    },
+    {
+      "input": "Both CUDA-11 and CUDA-12 are supported.",
+      "expected": "Both CUDA eleven and CUDA twelve are supported."
+    },
+    {
+      "input": "The trail is 42km long.",
+      "expected": "The trail is forty-twokm long."
+    },
+    {
+      "input": "Each package weighs 500kg.",
+      "expected": "Each package weighs five hundredkg."
+    },
+    {
+      "input": "Water boils at 100°C.",
+      "expected": "Water boils at one hundred C."
+    },
+    {
+      "input": "Download the 2.5GB model file.",
+      "expected": "Download the two point fiveGB model file."
+    },
+    {
+      "input": "The CPU runs at 3.6GHz.",
+      "expected": "The CPU runs at three point sixGHz."
+    },
+    {
+      "input": "Average latency is 12ms.",
+      "expected": "Average latency is twelvems."
+    },
+    {
+      "input": "<b>Hello</b> World! It's a great day.",
+      "expected": "Hello World! It s a great day."
+    },
+    {
+      "input": "#NLP @user great post!",
+      "expected": "NLP user great post!"
+    },
+    {
+      "input": "I don't know, won't you help? They've already left.",
+      "expected": "I don t know, won t you help? They ve already left."
+    },
+    {
+      "input": "Ain't no mountain high enough. Let's go!",
+      "expected": "Ain t no mountain high enough. Let s go!"
+    },
+    {
+      "input": "The final score was 3:0.",
+      "expected": "The final score was three:zero."
+    },
+    {
+      "input": "The display is 16:9.",
+      "expected": "The display is sixteen:nine."
+    },
+    {
+      "input": "Connect to server at 192.168.1.1 on port 8080.",
+      "expected": "Connect to server at one hundred ninety-two point one hundred sixty-eight point one point one on port eight thousand eighty."
+    },
+    {
+      "input": "Call us at 555-1234 or 1-800-555-0199.",
+      "expected": "Call us at five hundred fifty-five to one thousand two hundred thirty-four or one to eight hundred-five hundred fifty-five to one hundred ninety-nine."
+    },
+    {
+      "input": "On a scale of -10 to 10, she rated it 8.",
+      "expected": "On a scale of negative ten to ten she rated it eight."
+    },
+    {
+      "input": "He paused... then spoke.",
+      "expected": "He paused... then spoke."
+    },
+    {
+      "input": "The result — 42 — surprised everyone.",
+      "expected": "The result — forty-two — surprised everyone."
+    },
+    {
+      "input": "We trained a 7B parameter model for 100 epochs at 1e-4 learning rate.",
+      "expected": "We trained a sevenB parameter model for one hundred epochs at onee-four learning rate."
+    },
+    {
+      "input": "Fed raises rates by 0.25%, S&P 500 drops 1.2%.",
+      "expected": "Fed raises rates by zero point two five percent, S P five hundred drops one point two percent."
+    },
+    {
+      "input": "We raised $2.5M in seed funding and are growing 20% month-over-month.",
+      "expected": "We raised two point five million dollars in seed funding and are growing twenty percent month-over-month."
+    },
+    {
+      "input": "The M3 chip runs at 4.05GHz with a 40M transistor GPU and 8GB RAM.",
+      "expected": "The M3 chip runs at four point zero fiveGHz with a fortyM transistor GPU and eightGB RAM."
+    }
+  ],
+  "preprocessing": [
+    {
+      "input": "Smith et al. 2024, pp. 31-35",
+      "expected": "smith et al. two thousand twenty-four pp. thirty-one to thirty-five"
+    },
+    {
+      "input": "Fig. 2",
+      "expected": "fig. two"
+    },
+    {
+      "input": "Dr. Rivera paid $12.50 at 3:05 p.m.",
+      "expected": "dr. rivera paid twelve dollars and fifty cents at three oh fivep.m."
+    },
+    {
+      "input": "Jan. 2026",
+      "expected": "jan. two thousand twenty-six"
+    },
+    {
+      "input": "version 2.4",
+      "expected": "version two point four"
+    },
+    {
+      "input": "May 5, 2026",
+      "expected": "may five two thousand twenty-six"
+    },
+    {
+      "input": "10:30 AM",
+      "expected": "ten thirty am"
+    },
+    {
+      "input": "$1,250.00",
+      "expected": "one thousand two hundred fifty dollars"
+    },
+    {
+      "input": "9%",
+      "expected": "nine percent"
+    },
+    {
+      "input": "v1.2.3",
+      "expected": "v1.two point three"
+    },
+    {
+      "input": "Visit https://example.com or email hello@example.com.",
+      "expected": "visit or email ."
+    },
+    {
+      "input": "",
+      "expected": ""
+    },
+    {
+      "input": "   ",
+      "expected": ""
+    },
+    {
+      "input": "A first sentence. A second sentence!",
+      "expected": "a first sentence. a second sentence!"
+    },
+    {
+      "input": "Hello, world!",
+      "expected": "hello, world!"
+    },
+    {
+      "input": "There are 1200 students and 42 teachers.",
+      "expected": "there are twelve hundred students and forty-two teachers."
+    },
+    {
+      "input": "The project costs $1,000,000 and took 365 days.",
+      "expected": "the project costs one million dollars and took three hundred sixty-five days."
+    },
+    {
+      "input": "Temperature dropped to -5 degrees overnight.",
+      "expected": "temperature dropped to negative five degrees overnight."
+    },
+    {
+      "input": "Pi is approximately 3.14159.",
+      "expected": "pi is approximately three point one four one five nine."
+    },
+    {
+      "input": "The voltage is 1.50 volts.",
+      "expected": "the voltage is one point five zero volts."
+    },
+    {
+      "input": "Add .5 teaspoons of salt and .25 cup of milk.",
+      "expected": "add zero point five teaspoons of salt and zero point two five cup of milk."
+    },
+    {
+      "input": "A -.05 correction was applied.",
+      "expected": "a negative zero point zero five correction was applied."
+    },
+    {
+      "input": "There were 0 errors and 0.0 warnings.",
+      "expected": "there were zero errors and zero point zero warnings."
+    },
+    {
+      "input": "The population is 7,900,000,000.",
+      "expected": "the population is seven billion nine hundred million."
+    },
+    {
+      "input": "Learning rate is 1e-4, weight decay 1e-5.",
+      "expected": "learning rate is one times ten to the negative four, weight decay one times ten to the negative five."
+    },
+    {
+      "input": "Avogadro's number is 6.022E23.",
+      "expected": "avogadro's number is six point zero two two times ten to the twenty-three."
+    },
+    {
+      "input": "The signal is 2.5e10 Hz.",
+      "expected": "the signal is two point five times ten to the ten hz."
+    },
+    {
+      "input": "We trained a 7B parameter model and a 13B variant.",
+      "expected": "we trained a seven billion parameter model and a thirteen billion variant."
+    },
+    {
+      "input": "The 340M model beat the 7B on MMLU.",
+      "expected": "the three hundred forty million model beat the seven billion on mmlu."
+    },
+    {
+      "input": "The salary was $85K per year.",
+      "expected": "the salary was eighty-five thousand dollars per year."
+    },
+    {
+      "input": "A coffee costs $4.99 here.",
+      "expected": "a coffee costs four dollars and ninety-nine cents here."
+    },
+    {
+      "input": "Rent is €1,200 per month.",
+      "expected": "rent is twelve hundred euros per month."
+    },
+    {
+      "input": "The book is £9.99.",
+      "expected": "the book is nine pounds and ninety-nine cents."
+    },
+    {
+      "input": "Inflation rose by 3.5% last quarter.",
+      "expected": "inflation rose by three point five percent last quarter."
+    },
+    {
+      "input": "Stocks fell -2% today.",
+      "expected": "stocks fell negative two percent today."
+    },
+    {
+      "input": "She finished 1st, he came 2nd, I was 3rd.",
+      "expected": "she finished first, he came second, i was third."
+    },
+    {
+      "input": "It's the 21st century and the 100th anniversary.",
+      "expected": "it is the twenty-first century and the one hundredth anniversary."
+    },
+    {
+      "input": "He ran his 42nd marathon.",
+      "expected": "he ran his forty-second marathon."
+    },
+    {
+      "input": "On the 33rd floor.",
+      "expected": "on the thirty-third floor."
+    },
+    {
+      "input": "Cut the recipe in 1/2.",
+      "expected": "cut the recipe in one half."
+    },
+    {
+      "input": "Add 3/4 cup of sugar and 1/4 teaspoon of salt.",
+      "expected": "add three quarters cup of sugar and one quarter teaspoon of salt."
+    },
+    {
+      "input": "The team completed 2/3 of the project.",
+      "expected": "the team completed two thirds of the project."
+    },
+    {
+      "input": "The pipe is 5/8 inch in diameter.",
+      "expected": "the pipe is five eighths inch in diameter."
+    },
+    {
+      "input": "The meeting starts at 3:30pm.",
+      "expected": "the meeting starts at three thirty pm."
+    },
+    {
+      "input": "Departure at 14:00.",
+      "expected": "departure at fourteen hundred."
+    },
+    {
+      "input": "Alarm set for 9:05 AM.",
+      "expected": "alarm set for nine oh five am."
+    },
+    {
+      "input": "The server restarts at 0:00.",
+      "expected": "the server restarts at zero hundred."
+    },
+    {
+      "input": "The 80s music scene was iconic.",
+      "expected": "the eighties music scene was iconic."
+    },
+    {
+      "input": "She grew up listening to 1990s grunge.",
+      "expected": "she grew up listening to nineteen nineties grunge."
+    },
+    {
+      "input": "The 2000s brought social media.",
+      "expected": "the twenty hundreds brought social media."
+    },
+    {
+      "input": "AI took off in the 2020s.",
+      "expected": "ai took off in the twenty twenties."
+    },
+    {
+      "input": "Born in the '90s, raised on 2000s pop.",
+      "expected": "born in the 'nineties, raised on twenty hundreds pop."
+    },
+    {
+      "input": "Read pages 10-20 for homework.",
+      "expected": "read pages ten to twenty for homework."
+    },
+    {
+      "input": "The war lasted from 2020-2024.",
+      "expected": "the war lasted from two thousand twenty to two thousand twenty-four."
+    },
+    {
+      "input": "Store between 5-10 degrees.",
+      "expected": "store between five to ten degrees."
+    },
+    {
+      "input": "gpt-3 is pretty sick.",
+      "expected": "gpt three is pretty sick."
+    },
+    {
+      "input": "They upgraded to GPT-3.5 last month.",
+      "expected": "they upgraded to gpt three point five last month."
+    },
+    {
+      "input": "This project is licensed under GPL-3.",
+      "expected": "this project is licensed under gpl three."
+    },
+    {
+      "input": "Requires Python-3.10 or higher.",
+      "expected": "requires python three point one zero or higher."
+    },
+    {
+      "input": "Both CUDA-11 and CUDA-12 are supported.",
+      "expected": "both cuda eleven and cuda twelve are supported."
+    },
+    {
+      "input": "The trail is 42km long.",
+      "expected": "the trail is forty-two kilometers long."
+    },
+    {
+      "input": "Each package weighs 500kg.",
+      "expected": "each package weighs five hundred kilograms."
+    },
+    {
+      "input": "Water boils at 100°C.",
+      "expected": "water boils at one hundred degrees celsius."
+    },
+    {
+      "input": "Download the 2.5GB model file.",
+      "expected": "download the two point five gigabytes model file."
+    },
+    {
+      "input": "The CPU runs at 3.6GHz.",
+      "expected": "the cpu runs at three point six gigahertz."
+    },
+    {
+      "input": "Average latency is 12ms.",
+      "expected": "average latency is twelve milliseconds."
+    },
+    {
+      "input": "<b>Hello</b> World! It's a great day.",
+      "expected": "hello world! it is a great day."
+    },
+    {
+      "input": "#NLP @user great post!",
+      "expected": "#nlp @user great post!"
+    },
+    {
+      "input": "I don't know, won't you help? They've already left.",
+      "expected": "i do not know, will not you help? they have already left."
+    },
+    {
+      "input": "Ain't no mountain high enough. Let's go!",
+      "expected": "is not no mountain high enough. let us go!"
+    },
+    {
+      "input": "The final score was 3:0.",
+      "expected": "the final score was three:zero."
+    },
+    {
+      "input": "The display is 16:9.",
+      "expected": "the display is sixteen:nine."
+    },
+    {
+      "input": "Connect to server at 192.168.1.1 on port 8080.",
+      "expected": "connect to server at one nine two dot one six eight dot one dot one on port eight thousand eighty."
+    },
+    {
+      "input": "Call us at 555-1234 or 1-800-555-0199.",
+      "expected": "call us at five five five one two three four or one eight zero zero five five five zero one nine nine."
+    },
+    {
+      "input": "On a scale of -10 to 10, she rated it 8.",
+      "expected": "on a scale of negative ten to ten she rated it eight."
+    },
+    {
+      "input": "He paused... then spoke.",
+      "expected": "he paused... then spoke."
+    },
+    {
+      "input": "The result — 42 — surprised everyone.",
+      "expected": "the result — forty-two — surprised everyone."
+    },
+    {
+      "input": "We trained a 7B parameter model for 100 epochs at 1e-4 learning rate.",
+      "expected": "we trained a seven billion parameter model for one hundred epochs at one times ten to the negative four learning rate."
+    },
+    {
+      "input": "GPT-4 scored 90% on the benchmark — 15% better than GPT-3.5.",
+      "expected": "gpt four scored ninety percent on the benchmark — fifteen percent better than gpt three point five."
+    },
+    {
+      "input": "Fed raises rates by 0.25%, S&P 500 drops 1.2%.",
+      "expected": "fed raises rates by zero point two five percent, s&p five hundred drops one point two percent."
+    },
+    {
+      "input": "We raised $2.5M in seed funding and are growing 20% month-over-month.",
+      "expected": "we raised two point five million dollars in seed funding and are growing twenty percent month-over-month."
+    },
+    {
+      "input": "The M3 chip runs at 4.05GHz with a 40M transistor GPU and 8GB RAM.",
+      "expected": "the m3 chip runs at four point zero five gigahertz with a forty million transistor gpu and eight gigabytes ram."
+    }
+  ],
+  "chunking": [
+    {
+      "input": "Smith et al. 2024, pp. 31-35",
+      "expected": [
+        "Smith et al. 2024, pp. 31-35,"
+      ]
+    },
+    {
+      "input": "Fig. 2",
+      "expected": [
+        "Fig. 2,"
+      ]
+    },
+    {
+      "input": "Dr. Rivera paid $12.50 at 3:05 p.m.",
+      "expected": [
+        "Dr. Rivera paid $12.50 at 3:05 p.m."
+      ]
+    },
+    {
+      "input": "Jan. 2026",
+      "expected": [
+        "Jan. 2026,"
+      ]
+    },
+    {
+      "input": "version 2.4",
+      "expected": [
+        "version 2.4,"
+      ]
+    },
+    {
+      "input": "May 5, 2026",
+      "expected": [
+        "May 5, 2026,"
+      ]
+    },
+    {
+      "input": "10:30 AM",
+      "expected": [
+        "10:30 AM,"
+      ]
+    },
+    {
+      "input": "$1,250.00",
+      "expected": [
+        "$1,250.00,"
+      ]
+    },
+    {
+      "input": "9%",
+      "expected": [
+        "9%,"
+      ]
+    },
+    {
+      "input": "v1.2.3",
+      "expected": [
+        "v1.2.3,"
+      ]
+    },
+    {
+      "input": "Visit https://example.com or email hello@example.com.",
+      "expected": [
+        "Visit https://example.com or email hello@example.com."
+      ]
+    },
+    {
+      "input": "",
+      "expected": []
+    },
+    {
+      "input": "   ",
+      "expected": []
+    },
+    {
+      "input": "A first sentence. A second sentence!",
+      "expected": [
+        "A first sentence.",
+        "A second sentence!"
+      ]
+    },
+    {
+      "input": "Hello, world!",
+      "expected": [
+        "Hello, world!"
+      ]
+    },
+    {
+      "input": "There are 1200 students and 42 teachers.",
+      "expected": [
+        "There are 1200 students and 42 teachers."
+      ]
+    },
+    {
+      "input": "The project costs $1,000,000 and took 365 days.",
+      "expected": [
+        "The project costs $1,000,000 and took 365 days."
+      ]
+    },
+    {
+      "input": "Temperature dropped to -5 degrees overnight.",
+      "expected": [
+        "Temperature dropped to -5 degrees overnight."
+      ]
+    },
+    {
+      "input": "Pi is approximately 3.14159.",
+      "expected": [
+        "Pi is approximately 3.14159."
+      ]
+    },
+    {
+      "input": "The voltage is 1.50 volts.",
+      "expected": [
+        "The voltage is 1.50 volts."
+      ]
+    },
+    {
+      "input": "Add .5 teaspoons of salt and .25 cup of milk.",
+      "expected": [
+        "Add .5 teaspoons of salt and .25 cup of milk."
+      ]
+    },
+    {
+      "input": "A -.05 correction was applied.",
+      "expected": [
+        "A -.05 correction was applied."
+      ]
+    },
+    {
+      "input": "There were 0 errors and 0.0 warnings.",
+      "expected": [
+        "There were 0 errors and 0.0 warnings."
+      ]
+    },
+    {
+      "input": "The population is 7,900,000,000.",
+      "expected": [
+        "The population is 7,900,000,000."
+      ]
+    },
+    {
+      "input": "Learning rate is 1e-4, weight decay 1e-5.",
+      "expected": [
+        "Learning rate is 1e-4, weight decay 1e-5."
+      ]
+    },
+    {
+      "input": "Avogadro's number is 6.022E23.",
+      "expected": [
+        "Avogadro's number is 6.022E23."
+      ]
+    },
+    {
+      "input": "The signal is 2.5e10 Hz.",
+      "expected": [
+        "The signal is 2.5e10 Hz."
+      ]
+    },
+    {
+      "input": "We trained a 7B parameter model and a 13B variant.",
+      "expected": [
+        "We trained a 7B parameter model and a 13B variant."
+      ]
+    },
+    {
+      "input": "The 340M model beat the 7B on MMLU.",
+      "expected": [
+        "The 340M model beat the 7B on MMLU."
+      ]
+    },
+    {
+      "input": "The salary was $85K per year.",
+      "expected": [
+        "The salary was $85K per year."
+      ]
+    },
+    {
+      "input": "A coffee costs $4.99 here.",
+      "expected": [
+        "A coffee costs $4.99 here."
+      ]
+    },
+    {
+      "input": "Rent is €1,200 per month.",
+      "expected": [
+        "Rent is €1,200 per month."
+      ]
+    },
+    {
+      "input": "The book is £9.99.",
+      "expected": [
+        "The book is £9.99."
+      ]
+    },
+    {
+      "input": "Inflation rose by 3.5% last quarter.",
+      "expected": [
+        "Inflation rose by 3.5% last quarter."
+      ]
+    },
+    {
+      "input": "Stocks fell -2% today.",
+      "expected": [
+        "Stocks fell -2% today."
+      ]
+    },
+    {
+      "input": "She finished 1st, he came 2nd, I was 3rd.",
+      "expected": [
+        "She finished 1st, he came 2nd, I was 3rd."
+      ]
+    },
+    {
+      "input": "It's the 21st century and the 100th anniversary.",
+      "expected": [
+        "It's the 21st century and the 100th anniversary."
+      ]
+    },
+    {
+      "input": "He ran his 42nd marathon.",
+      "expected": [
+        "He ran his 42nd marathon."
+      ]
+    },
+    {
+      "input": "On the 33rd floor.",
+      "expected": [
+        "On the 33rd floor."
+      ]
+    },
+    {
+      "input": "Cut the recipe in 1/2.",
+      "expected": [
+        "Cut the recipe in 1/2."
+      ]
+    },
+    {
+      "input": "Add 3/4 cup of sugar and 1/4 teaspoon of salt.",
+      "expected": [
+        "Add 3/4 cup of sugar and 1/4 teaspoon of salt."
+      ]
+    },
+    {
+      "input": "The team completed 2/3 of the project.",
+      "expected": [
+        "The team completed 2/3 of the project."
+      ]
+    },
+    {
+      "input": "The pipe is 5/8 inch in diameter.",
+      "expected": [
+        "The pipe is 5/8 inch in diameter."
+      ]
+    },
+    {
+      "input": "The meeting starts at 3:30pm.",
+      "expected": [
+        "The meeting starts at 3:30pm."
+      ]
+    },
+    {
+      "input": "Departure at 14:00.",
+      "expected": [
+        "Departure at 14:00."
+      ]
+    },
+    {
+      "input": "Alarm set for 9:05 AM.",
+      "expected": [
+        "Alarm set for 9:05 AM."
+      ]
+    },
+    {
+      "input": "The server restarts at 0:00.",
+      "expected": [
+        "The server restarts at 0:00."
+      ]
+    },
+    {
+      "input": "The 80s music scene was iconic.",
+      "expected": [
+        "The 80s music scene was iconic."
+      ]
+    },
+    {
+      "input": "She grew up listening to 1990s grunge.",
+      "expected": [
+        "She grew up listening to 1990s grunge."
+      ]
+    },
+    {
+      "input": "The 2000s brought social media.",
+      "expected": [
+        "The 2000s brought social media."
+      ]
+    },
+    {
+      "input": "AI took off in the 2020s.",
+      "expected": [
+        "AI took off in the 2020s."
+      ]
+    },
+    {
+      "input": "Born in the '90s, raised on 2000s pop.",
+      "expected": [
+        "Born in the '90s, raised on 2000s pop."
+      ]
+    },
+    {
+      "input": "Read pages 10-20 for homework.",
+      "expected": [
+        "Read pages 10-20 for homework."
+      ]
+    },
+    {
+      "input": "The war lasted from 2020-2024.",
+      "expected": [
+        "The war lasted from 2020-2024."
+      ]
+    },
+    {
+      "input": "Store between 5-10 degrees.",
+      "expected": [
+        "Store between 5-10 degrees."
+      ]
+    },
+    {
+      "input": "gpt-3 is pretty sick.",
+      "expected": [
+        "gpt-3 is pretty sick."
+      ]
+    },
+    {
+      "input": "They upgraded to GPT-3.5 last month.",
+      "expected": [
+        "They upgraded to GPT-3.5 last month."
+      ]
+    },
+    {
+      "input": "This project is licensed under GPL-3.",
+      "expected": [
+        "This project is licensed under GPL-3."
+      ]
+    },
+    {
+      "input": "Requires Python-3.10 or higher.",
+      "expected": [
+        "Requires Python-3.10 or higher."
+      ]
+    },
+    {
+      "input": "Both CUDA-11 and CUDA-12 are supported.",
+      "expected": [
+        "Both CUDA-11 and CUDA-12 are supported."
+      ]
+    },
+    {
+      "input": "The trail is 42km long.",
+      "expected": [
+        "The trail is 42km long."
+      ]
+    },
+    {
+      "input": "Each package weighs 500kg.",
+      "expected": [
+        "Each package weighs 500kg."
+      ]
+    },
+    {
+      "input": "Water boils at 100°C.",
+      "expected": [
+        "Water boils at 100°C."
+      ]
+    },
+    {
+      "input": "Download the 2.5GB model file.",
+      "expected": [
+        "Download the 2.5GB model file."
+      ]
+    },
+    {
+      "input": "The CPU runs at 3.6GHz.",
+      "expected": [
+        "The CPU runs at 3.6GHz."
+      ]
+    },
+    {
+      "input": "Average latency is 12ms.",
+      "expected": [
+        "Average latency is 12ms."
+      ]
+    },
+    {
+      "input": "<b>Hello</b> World! It's a great day.",
+      "expected": [
+        "<b>Hello</b> World!",
+        "It's a great day."
+      ]
+    },
+    {
+      "input": "#NLP @user great post!",
+      "expected": [
+        "#NLP @user great post!"
+      ]
+    },
+    {
+      "input": "I don't know, won't you help? They've already left.",
+      "expected": [
+        "I don't know, won't you help?",
+        "They've already left."
+      ]
+    },
+    {
+      "input": "Ain't no mountain high enough. Let's go!",
+      "expected": [
+        "Ain't no mountain high enough.",
+        "Let's go!"
+      ]
+    },
+    {
+      "input": "The final score was 3:0.",
+      "expected": [
+        "The final score was 3:0."
+      ]
+    },
+    {
+      "input": "The display is 16:9.",
+      "expected": [
+        "The display is 16:9."
+      ]
+    },
+    {
+      "input": "Connect to server at 192.168.1.1 on port 8080.",
+      "expected": [
+        "Connect to server at 192.168.1.1 on port 8080."
+      ]
+    },
+    {
+      "input": "Call us at 555-1234 or 1-800-555-0199.",
+      "expected": [
+        "Call us at 555-1234 or 1-800-555-0199."
+      ]
+    },
+    {
+      "input": "On a scale of -10 to 10, she rated it 8.",
+      "expected": [
+        "On a scale of -10 to 10, she rated it 8."
+      ]
+    },
+    {
+      "input": "He paused... then spoke.",
+      "expected": [
+        "He paused...",
+        "then spoke."
+      ]
+    },
+    {
+      "input": "The result — 42 — surprised everyone.",
+      "expected": [
+        "The result — 42 — surprised everyone."
+      ]
+    },
+    {
+      "input": "We trained a 7B parameter model for 100 epochs at 1e-4 learning rate.",
+      "expected": [
+        "We trained a 7B parameter model for 100 epochs at 1e-4 learning rate."
+      ]
+    },
+    {
+      "input": "GPT-4 scored 90% on the benchmark — 15% better than GPT-3.5.",
+      "expected": [
+        "GPT-4 scored 90% on the benchmark — 15% better than GPT-3.5."
+      ]
+    },
+    {
+      "input": "Fed raises rates by 0.25%, S&P 500 drops 1.2%.",
+      "expected": [
+        "Fed raises rates by 0.25%, S&P 500 drops 1.2%."
+      ]
+    },
+    {
+      "input": "We raised $2.5M in seed funding and are growing 20% month-over-month.",
+      "expected": [
+        "We raised $2.5M in seed funding and are growing 20% month-over-month."
+      ]
+    },
+    {
+      "input": "The M3 chip runs at 4.05GHz with a 40M transistor GPU and 8GB RAM.",
+      "expected": [
+        "The M3 chip runs at 4.05GHz with a 40M transistor GPU and 8GB RAM."
+      ]
+    }
+  ],
+  "tokenization": [
+    {
+      "input": "həlˈoʊ wˈɜːld!",
+      "expected": [
+        0,
+        50,
+        83,
+        54,
+        156,
+        57,
+        135,
+        16,
+        65,
+        156,
+        87,
+        158,
+        54,
+        46,
+        16,
+        5,
+        10,
+        0
+      ]
+    },
+    {
+      "input": "kˈɪʔn̩ tˌiːtˌiːˈɛs",
+      "expected": [
+        0,
+        53,
+        156,
+        102,
+        148,
+        56,
+        16,
+        175,
+        16,
+        62,
+        157,
+        51,
+        158,
+        62,
+        157,
+        51,
+        158,
+        156,
+        86,
+        61,
+        10,
+        0
+      ]
+    },
+    {
+      "input": "ɑɐɒæɓʙβɔɕçɗɖðʤəɘɚɛɜɝ",
+      "expected": [
+        0,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        10,
+        0
+      ]
+    },
+    {
+      "input": "'̩'ᵻ \"«»—…",
+      "expected": [
+        0,
+        176,
+        16,
+        175,
+        16,
+        176,
+        16,
+        177,
+        16,
+        15,
+        16,
+        12,
+        16,
+        13,
+        16,
+        9,
+        16,
+        10,
+        10,
+        0
+      ]
+    },
+    {
+      "input": "unknown 😀 symbols",
+      "expected": [
+        0,
+        63,
+        56,
+        53,
+        56,
+        57,
+        65,
+        56,
+        16,
+        16,
+        61,
+        67,
+        55,
+        44,
+        57,
+        54,
+        61,
+        10,
+        0
+      ]
+    },
+    {
+      "input": "",
+      "expected": [
+        0,
+        10,
+        0
+      ]
+    },
+    {
+      "input": "a_b ² Ⅳ é ɹˈʌnɪŋ",
+      "expected": [
+        0,
+        43,
+        44,
+        16,
+        16,
+        16,
+        16,
+        123,
+        156,
+        138,
+        56,
+        102,
+        112,
+        10,
+        0
+      ]
+    }
+  ]
+}

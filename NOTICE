@@ -1,0 +1,17 @@
+KittenTTSSharp
+
+This project includes C# adaptations of KittenML/KittenTTS's inference,
+tokenization and text preprocessing code, licensed under Apache-2.0.
+Reference: https://github.com/KittenML/KittenTTS
+Source revision: be5758500b731b8fc674acc62ea480d3022b7ebe (0.8.1)
+Modified for .NET, September 2026.
+
+Model weights and third-party native dependencies retain their own licenses.
+ONNX Runtime: MIT (https://github.com/microsoft/onnxruntime).
+eSpeak NG: GPL-3.0-or-later (https://github.com/espeak-ng/espeak-ng).
+eSpeak NG is a separately installed runtime dependency and is not included
+in this project's NuGet package. The optional Windows setup script uses
+the same espeakng-loader 0.2.4 distribution as the Python ecosystem and
+retains its distribution metadata. eSpeak NG source and license:
+https://github.com/espeak-ng/espeak-ng
+Native loader/build scripts: https://github.com/thewh1teagle/espeakng-loader

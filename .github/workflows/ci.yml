@@ -1,0 +1,32 @@
+name: build-and-test
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '8.0.x'
+      - name: Set up pinned eSpeak NG on Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          ./scripts/setup-espeak.ps1
+          "ESPEAK_LIBRARY_PATH=$((Resolve-Path .dependencies/espeak/espeakng_loader/espeak-ng.dll).Path)" >> $env:GITHUB_ENV
+          "ESPEAK_DATA_PATH=$((Resolve-Path .dependencies/espeak/espeakng_loader/espeak-ng-data).Path)" >> $env:GITHUB_ENV
+          "KITTENTTS_TEST_NATIVE=1" >> $env:GITHUB_ENV
+      - run: dotnet build KittenTTSSharp.sln -c Release
+      - run: dotnet test KittenTTSSharp.sln -c Release --no-build
+      - run: dotnet pack src/KittenTTSSharp/KittenTTSSharp.csproj -c Release --no-build -o artifacts/packages
